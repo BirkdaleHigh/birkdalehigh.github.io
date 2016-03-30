@@ -1,11 +1,6 @@
-html{
-  min-height: 100%;
-}
 body{
   margin: 0;
   padding: 0;
-  min-height: 100%;
-  overflow-x: hidden;
   font: 100 14px/21px "segoe UI", sans-serif;
 }
 
@@ -49,13 +44,21 @@ blockquote > cite{
   }
 
 .masthead{
-  height: 300px; /* Required to influence objectSVG logo and crossing slash*/
-  margin: 40px 20px 0;
+  width: 720px;
+  margin: 0 auto;
 }
-  .masthead object{
+.masthead .mask{
+  height: 300px; /* Required to influence objectSVG logo and crossing slash*/
+  margin: 40px 0 0 20px;
+  overflow: hidden;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+  .masthead .mask object{
     height: inherit;
   }
-.masthead, .masthead .titleBox{
+.masthead, .mask, .titleBox{
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -64,20 +67,42 @@ blockquote > cite{
   -webkit-align-items: flex-end;
   -ms-flex-align: flex-end;
   align-items: flex-end;
+  background: inherit;
 }
 .masthead .titleBox{
   border-left: 5px solid;
   -webkit-transform: skewX(-40deg);
   transform: skewX(-40deg);
-  overflow: hidden;
   height: 75%;
-  margin-left: -40px;
+  margin-left: -80px;
+}
+.masthead .description{
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
 }
 .masthead h1{
   margin: 0;
-  padding: 0 20px;
+  padding: 0 20px 20px;
   -webkit-transform: skewX(40deg);
   transform: skewX(40deg)
+}
+
+.clubList{
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.clubList article{
+  max-width: 480px;
 }
 
 body{
