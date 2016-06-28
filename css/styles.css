@@ -26,6 +26,7 @@ blockquote > cite{
 }
 
 article{
+  margin: 1em;
   width: 720px;
 }
 
@@ -136,6 +137,15 @@ section[role='main']{
 }
 .clubList article{
   max-width: 480px;
+}
+
+.draft{
+  width: 100%;
+  position: absolute;
+    top: 20px;
+    left: 0;
+  text-align: center;
+  background: rgba(234,0,0,.7);
 }
 
 body{
