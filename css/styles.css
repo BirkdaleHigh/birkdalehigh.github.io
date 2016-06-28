@@ -17,7 +17,13 @@ h1,h2,h3,h4,h5,h6{
 h1 + p.sub{
   margin: -3em 0 1em 1em;
 }
-
+h1 > a{
+  text-decoration: none;
+  color: inherit;
+}
+h1 > a:hover{
+  background: #00989d;
+}
 blockquote > cite{
   display: block;
   margin: 0 1em;
@@ -96,6 +102,13 @@ table {
   background: inherit;
   justify-content: space-around;
 }
+.masthead .titleBox a{
+  text-decoration: none;
+  color: inherit;
+}
+.masthead .titleBox a:visited{
+  color: inherit;
+}
 .masthead .titleBox{
   border-left: 5px solid;
   -webkit-transform: skewX(-40deg);
@@ -141,11 +154,11 @@ section[role='main']{
 
 .draft{
   width: 100%;
-  position: absolute;
-    top: 20px;
+  position: fixed;
+    top: 140px;
     left: 0;
+  z-index: -1;
   text-align: center;
-  background: rgba(234,0,0,.7);
 }
 
 body{
