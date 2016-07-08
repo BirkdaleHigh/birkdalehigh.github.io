@@ -53,6 +53,10 @@ table {
     background: #efefef
   }
 
+video {
+  width:100%;
+}
+
 .points{
   padding:1em 0 2em 300px;
   position: relative;
