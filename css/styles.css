@@ -21,15 +21,6 @@ h1 > a{
   text-decoration: none;
   color: inherit;
 }
-h1 > a:hover{
-  background: #00989d;
-}
-blockquote > cite{
-  display: block;
-  margin: 0 1em;
-  padding:0 .7em;
-  font-size: .8em;
-}
 
 article{
   margin: 1em;
@@ -57,27 +48,22 @@ video {
   width:100%;
 }
 
-.points{
-  padding:1em 0 2em 300px;
-  position: relative;
-
+body{
+  background: #fbfefd;
 }
-  .points > .count{
-    content:"";
-    position: absolute;
-      left: 75px;
-      top:18%;
-    padding:75px;
-    width: 0px;
-    line-height: 0;
-    color: white;
-    font-size: 12em;
-    overflow:hidden;
+.bg-info{ background-color: #556270; }
+.bg-success{ background-color: #C7F464; }
+.bg-attention{ background-color: #4ECDC4; }
+.bg-warn{ background-color: #FF6B6B; }
+.bg-fail{ background-color: #C44D58; }
 
-    background: #063682;
-    border-radius: 75px;
-
-  }
+a{
+  color: #4ECDC4;
+}
+a:hover{
+  background: #4ECDC4;
+  color: #556270;
+}
 
 .masthead{
   width: 960px;
@@ -183,44 +169,16 @@ section{
   margin-left: -25%;
 }
 
-body{
-  background: #f8f8f8;
-}
-.red{
-  background: #e8333a;
-}
-.black{
-  background: #3d3936;
-}
-.teal{
-  background: #00989d;
-}
-.green{
-  background: #09D30F;
-}
-
-
-.points .count{
-  color: #fffafe;
-  background: #3d3936;
-  border-radius: 75px;
-}
-
-blockquote > cite{
-  border-left: 1px #080808 solid;
-}
-
-.count[data-status="up"]{
-  background: #09D30F;
-}
-.count[data-status="down"]{
-  background: #e8333a;
-}
-
 .masthead, .masthead .titleBox{
   background: inherit;
 }
 .masthead .titleBox,.masthead svg path{
-  border-color: #00989d;
-  fill: #00989d;
+  border-color: #4ECDC4;
+  fill: #4ECDC4;
+}
+
+.podium li:first-child{
+  font-size: 1.1em;
+  font-weight: bold;
+  margin: 1.2em 0;
 }
